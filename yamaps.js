@@ -31,5 +31,11 @@ function init () {
      document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
         myMap.destroy();
+      };
+
+        document.getElementById('returnButton').onclick = function () {
+        // Для возврата используется метод reload.
+        /*document.reset(); // сбрасываем форму*/
+        location.reload(); // перезагружаем страницу
     };
 }
